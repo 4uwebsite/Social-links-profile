@@ -31,6 +31,18 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 
+/* COLOURS - START */
+* {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+/* COLOURS - END */
+
+
+
 /* TYPOGRAPHY - START */
 @font-face {
     font-family: 'Inter';
@@ -40,6 +52,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 * {
     font-family: 'Inter';
+    color: var(--white);
 }
 
 .font-weight--400 {
@@ -55,20 +68,76 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 
-/* COLOURS - START */
-* {
-    --green: hsl(75, 94%, 57%);
-    --white: hsl(0, 0%, 100%);
-    --grey-700: hsl(0, 0%, 20%);
-    --grey-800: hsl(0, 0%, 12%);
-    --grey-900: hsl(0, 0%, 8%);
-}
-/* COLOURS - END */
-
-
-
 /* ELEMENTS - START */
+body {
+    background-color: var(--grey-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--grey-800);
+    max-width: 500px;
+    padding: 3em;
+    border-radius: 1em;
+}
+
+img {
+    border-radius: 50%;
+    width: 8em;
+    margin-bottom: 2.6em;
+}
+
 p {
     font-size: 0.875rem;
 }
+
+section {
+    /* display: block; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+button {
+    background-color: var(--grey-700);
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5em 0;
+    border-radius: 0.5em;
+}
 /* ELEMENTS - END */
+
+
+
+/* CLASSES & IDs - START */
+.city {
+    color: var(--green);
+    font-size: 1.2rem;
+}
+
+.bio {
+    font-size: 1.2rem;
+    margin: 2em 0 1.5em 0;
+}
+/* CLASSES & IDs - END */
+
+
+
+/* UTILS - START */
+/* .border-radius{
+    border-radius: 0.5em;
+} */
+/* UTILS - END */
+
+
+/* TEMP */
+/* * {
+    border: 1px red dotted;
+} */
