@@ -74,6 +74,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     height: 100dvh;
 }
 
@@ -97,7 +98,25 @@ p {
     font-size: 0.875rem;
 }
 
-section {
+button {
+    background-color: var(--grey-700);
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: var(--green);
+    color: var(--grey-900);
+}
+/* ELEMENTS - END */
+
+
+
+/* CLASSES & IDs - START */
+.btn-sec {
     /* display: block; */
     width: 100%;
     display: flex;
@@ -105,18 +124,6 @@ section {
     gap: 1.2em;
 }
 
-button {
-    background-color: var(--grey-700);
-    border: none;
-    font-size: 1.2rem;
-    padding: 0.5em 0;
-    border-radius: 0.5em;
-}
-/* ELEMENTS - END */
-
-
-
-/* CLASSES & IDs - START */
 .city {
     color: var(--green);
     font-size: 1.2rem;
