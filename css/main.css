@@ -28,3 +28,17 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 } */
 /* CSS Reset - END */
+
+
+
+/* GLOBAL - START */
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    font-display: swap;
+}
+
+* {
+    font-family: 'Inter';
+}
+/* GLOBAL - END */
