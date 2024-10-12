@@ -112,3 +112,6 @@ This is where you can give a hat tip to anyone who helped you out on this projec
 ## Version Control
 - 1.0.1 - Refactored.
 - 1.0.0 - Non refactored code.
+
+## To Do
+- [-] Make responsive.
