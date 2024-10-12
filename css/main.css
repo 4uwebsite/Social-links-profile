@@ -31,7 +31,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 
-/* FONTS - START */
+/* TYPOGRAPHY - START */
 @font-face {
     font-family: 'Inter';
     src: url('/assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
@@ -51,7 +51,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .font-weight--700 {
     font-weight: 700;
 }
-/* FONTS - END */
+/* TYPOGRAPHY - END */
 
 
 
@@ -64,3 +64,11 @@ p, h1, h2, h3, h4, h5, h6 {
     --grey-900: hsl(0, 0%, 8%);
 }
 /* COLOURS - END */
+
+
+
+/* ELEMENTS - START */
+p {
+    font-size: 0.875rem;
+}
+/* ELEMENTS - END */
