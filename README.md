@@ -110,8 +110,11 @@ This is where you can give a hat tip to anyone who helped you out on this projec
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
 
 ## Version Control
+- 1.0.2 - Responsive.
 - 1.0.1 - Refactored.
 - 1.0.0 - Non refactored code.
 
 ## To Do
-- [-] Make responsive.
+- [-] Testing.
+- [-] Update ReadMe.
+- [x] Make responsive.

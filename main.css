@@ -11,7 +11,8 @@
 }
 body {
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+    /* -webkit-font-smoothing: antialiased; */
+    text-align: center;
 }
 img, picture, video, canvas, svg {
     display: block;
@@ -42,13 +43,18 @@ p, h1, h2, h3, h4, h5, h6 {
 /* TYPOGRAPHY - START */
 @font-face {
     font-family: 'Inter';
-    src: url('/assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    src: url('assets/fonts/Inter-VariableFont_slnt,wght.ttf');
     font-display: swap;
 }
 
 * {
     font-family: 'Inter';
     color: var(--white);
+    /* Font Sizes - START */
+    --para-400: 0.766rem;
+    --para-600: 1.05rem;
+    --h1-400: 1.75rem;
+    /* Font Sizes - END */
 }
 
 .font-weight--400 {
@@ -60,6 +66,12 @@ p, h1, h2, h3, h4, h5, h6 {
 .font-weight--700 {
     font-weight: 700;
 }
+.font-size--1-2{
+    font-size: var(--para-600);
+}
+.font-h1 {
+    font-size: var(--h1-400);
+}
 /* TYPOGRAPHY - END */
 
 
@@ -68,25 +80,26 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
     background-color: var(--grey-900);
     justify-content: center;
-    height: 100vh;
-    height: 100dvh;
+    /* height: 100vh; */
+    /* height: 100dvh; */
+    min-width: 320px;
 }
 
 main {
     background-color: var(--grey-800);
-    min-width: 520px;
-    padding: 3em;
+    margin: 0.25em;
+    padding: 2.5em 3em;
     border-radius: 1em;
 }
 
 img {
     border-radius: 50%;
-    width: 8em;
-    margin-bottom: 2.6em;
+    width: 7em;
+    margin-bottom: 1.2em;
 }
 
 p {
-    font-size: 0.875rem;
+    font-size: var(--para-400);
 }
 
 button {
@@ -107,8 +120,8 @@ button:hover {
 
 /* CLASSES & IDs - START */
 .btn-sec {
-    width: 100%;
-    gap: 1.2em;
+    min-width: 21em;
+    gap: 1em;
 }
 
 .city {
@@ -116,7 +129,7 @@ button:hover {
 }
 
 .bio {
-    margin: 2em 0 1.5em 0;
+    margin: 1em 0 1.5em 0;
 }
 /* CLASSES & IDs - END */
 
@@ -132,7 +145,32 @@ button:hover {
 .flex-direction--column {
     flex-direction: column;
 }
-.font-size--1-2{
-    font-size: 1.2rem;
-}
 /* UTILS - END */
+
+
+
+/* MEDIA QUERIES - START */
+@media only screen and (max-width: 440px) {
+    /* Screens below 440px */
+    main {
+        padding: 1.2em 1em 2em 1em;
+    }
+}
+@media only screen and (max-width: 500px) {
+    /* Screens below 500px */
+    .btn-sec {
+        min-width: 0;
+        width: 100%;
+    }
+    .bio {
+        max-width: 90%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* Screens above 768px */
+    body {
+        height: 100vh;
+        height: 100dvh;
+    }
+  }
+/* MEDIA QUERIES - END */
