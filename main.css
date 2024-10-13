@@ -81,7 +81,7 @@ body {
     background-color: var(--grey-900);
     justify-content: center;
     height: 100dvh;
-    height: 100vh;
+    /* height: 100vh; */
     min-width: 320px;
 }
 
