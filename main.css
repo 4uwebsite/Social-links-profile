@@ -151,11 +151,13 @@ button:hover {
 
 /* MEDIA QUERIES - START */
 @media only screen and (max-width: 440px) {
+    /* Screens below 440px */
     main {
         padding: 1.2em 1em 2em 1em;
     }
 }
 @media only screen and (max-width: 500px) {
+    /* Screens below 500px */
     .btn-sec {
         min-width: 0;
         width: 100%;
@@ -164,4 +166,11 @@ button:hover {
         max-width: 90%;
     }
 }
+@media only screen and (min-width: 768px) {
+    /* Screens above 768px */
+    body {
+        height: 100vh;
+        height: 100dvh;
+    }
+  }
 /* MEDIA QUERIES - END */
