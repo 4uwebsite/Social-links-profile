@@ -54,8 +54,6 @@ p, h1, h2, h3, h4, h5, h6 {
     --para-400: 0.766rem;
     --para-600: 1.05rem;
     --h1-400: 1.75rem;
-    /* --h1-400: 2rem; */
-    /* --h1-900: 4rem; */
     /* Font Sizes - END */
 }
 
@@ -89,7 +87,6 @@ body {
 
 main {
     background-color: var(--grey-800);
-    /* min-width: 320px; */
     margin: 0.25em;
     padding: 2.5em 3em;
     border-radius: 1em;
@@ -99,7 +96,6 @@ img {
     border-radius: 50%;
     width: 7em;
     margin-bottom: 1.2em;
-    /* margin-bottom: 2.6em; */
 }
 
 p {
@@ -124,8 +120,7 @@ button:hover {
 
 /* CLASSES & IDs - START */
 .btn-sec {
-    width: 100%;
-    /* width: 22em; */
+    min-width: 21em;
     gap: 1em;
 }
 
@@ -134,7 +129,6 @@ button:hover {
 }
 
 .bio {
-    max-width: 90%;
     margin: 1em 0 1.5em 0;
 }
 /* CLASSES & IDs - END */
@@ -156,5 +150,18 @@ button:hover {
 
 
 /* MEDIA QUERIES - START */
-
+@media only screen and (max-width: 440px) {
+    main {
+        padding: 1.2em 1em 2em 1em;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .btn-sec {
+        min-width: 0;
+        width: 100%;
+    }
+    .bio {
+        max-width: 90%;
+    }
+}
 /* MEDIA QUERIES - END */
