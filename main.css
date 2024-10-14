@@ -80,8 +80,8 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
     background-color: var(--grey-900);
     justify-content: center;
-    /* height: 100vh; */
-    /* height: 100dvh; */
+    height: 100vh;
+    height: 100dvh;
     min-width: 320px;
 }
 
@@ -160,8 +160,11 @@ button:hover {
     /* Screens below 500px */
     * {
         --para-400: 0.5rem;
-        --para-600: 0.7rem;
+        --para-600: 0.6rem;
         --h1-400: 1.2rem;
+    }
+    main {
+        padding: 1.2em 3em 2em 3em;
     }
     .btn-sec {
         min-width: 0;
@@ -173,9 +176,9 @@ button:hover {
 }
 @media only screen and (min-width: 768px) {
     /* Screens above 768px */
-    body {
+    /* body {
         height: 100vh;
         height: 100dvh;
-    }
+    } */
   }
 /* MEDIA QUERIES - END */
