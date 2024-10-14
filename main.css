@@ -158,6 +158,11 @@ button:hover {
 }
 @media only screen and (max-width: 500px) {
     /* Screens below 500px */
+    * {
+        --para-400: 0.5rem;
+        --para-600: 0.7rem;
+        --h1-400: 1.2rem;
+    }
     .btn-sec {
         min-width: 0;
         width: 100%;
