@@ -109,8 +109,9 @@ button {
     border-radius: 0.5em;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    outline: none;
 }
-button:hover {
+button:hover, button:active, button:focus {
     background-color: var(--green);
     color: var(--grey-900);
 }
